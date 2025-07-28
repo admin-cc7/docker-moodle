@@ -31,6 +31,11 @@ services:
       - SITE_NAME=moodle_clearcyber
       - SITE_SHORT_NAME=moodle_cc
 ##
+    ports:
+      - "8080:80"
+      - "2020:2020"
+      - "9000:9000"
+      - "10050:10050"
     networks:
       - proxy
       - services
@@ -53,8 +58,6 @@ services:
       - services
     restart: always
 
-    ports:
-      - "8080:80"
   moodle-db-backup:
     container_name: moodle-db-backup
     image: tiredofit/db-backup
