@@ -15,7 +15,7 @@ services:
       - ./www/:/www/moodle
       - ./logs/:/www/logs
     environment:
-      - TIMEZONE=America/Vancouver
+      - TIMEZONE=Australia/Brisbane
       - CONTAINER_NAME=moodle.hostname.com
 
       - DB_HOST=moodle-db
@@ -42,7 +42,7 @@ services:
     volumes:
       - ./db:/var/lib/mysql
     environment:
-      - TIMEZONE=America/Vancouver
+      - TIMEZONE=Australia/Brisbane
       - CONTAINER_NAME=moodle-db
 
       - ROOT_PASS=password
