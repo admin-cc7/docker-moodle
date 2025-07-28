@@ -53,6 +53,8 @@ services:
       - services
     restart: always
 
+    ports:
+      - "8080:80"
   moodle-db-backup:
     container_name: moodle-db-backup
     image: tiredofit/db-backup
