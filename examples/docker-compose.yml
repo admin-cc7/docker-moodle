@@ -61,7 +61,7 @@ services:
     volumes:
       - ./dbbackup:/backup
     environment:
-      - TIMEZONE=America/Vancouver
+      - TIMEZONE=Australia/Brisbane
       - CONTAINER_NAME=moodle-db-backup
       - DB_HOST=moodle-db
       - DB_TYPE=mariadb
